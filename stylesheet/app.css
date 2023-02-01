@@ -365,7 +365,8 @@ body{
         border: 1px solid #fff;
         font-size: 20px;
     }
-    main .vi .vi-i{
+    main .vi .vi-i,
+    main .vi .vi-ii{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -376,11 +377,27 @@ body{
         height: 100px;
         border: 1px solid;
     }
-    main .vi .vi-i .btn-group button{
+    main .vi .vi-i .btn-group button,
+    main .vi .vi-ii .btn-group button{
         border:none;
         background-color: #0066b8;
         padding: 7px 80px;
         color: #fff;
+    }
+    main .vi .vi-ii .btn-group{
+        display: flex;
+    }
+    main .vi .vi-ii .btn-group button{
+        width: 150px;
+    }
+    main .vi .vi-ii .btn-group button div{
+        display: flex;
+        align-items: center;
+    }
+    main .vi .vi-ii .btn-group button div p{
+        font-size: 10px;
+        border: 1px solid;
+        width: 100%;
     }
     main .vi .vi-i .btn-group button div:first-child{
         font-size: 18px;
