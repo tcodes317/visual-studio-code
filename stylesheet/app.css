@@ -320,6 +320,10 @@ body{
     main .v .v-vi{
         background-color:#f2f2f2;
     }
+    main .v .v-vi{
+        padding: 50px 0;
+        padding-bottom: 80px;
+    }
     main .v .v-vi p{
         text-align: center;
         font-size: 20px;
@@ -355,10 +359,88 @@ body{
         justify-content: center;
     }
     main .v .v-vi .btn-group button{
-        padding: 15px 30px;
+        padding: 20px 50px;
         background-color: #0066b8;
         color: #fff;
         border: 1px solid #fff;
         font-size: 20px;
+    }
+    main .vi .vi-i{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    main .vi .vi-i .img-i i{
+        width: 100px;
+        height: 100px;
+        border: 1px solid;
+    }
+    main .vi .vi-i .btn-group button{
+        border:none;
+        background-color: #0066b8;
+        padding: 7px 80px;
+        color: #fff;
+    }
+    main .vi .vi-i .btn-group button div:first-child{
+        font-size: 18px;
+    }
+    main .vi .vi-i .btn-group button div:last-child{
+        font-size: 11px !important;
+    }
+    main .vi .vi-i .vi-man .vi-man-flex{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    main .vi .vi-i .vi-man .vi-man-flex > div{
+        margin: 5px 0;
+        text-align: center;
+    }
+    main .vi .vi-i .vi-man .vi-man-flex > div:nth-of-type(1){
+        margin-right: 5px;
+        width: 120px;
+    }
+    main .vi .vi-i .vi-man{
+        margin-top: 20px;
+    }
+    main .vi .vi-i .vi-man .vi-man-flex > div > *{
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+    main .vi .vi-i .vi-man .vi-man-flex p{
+        margin-right: 10px;
+    }
+    main .vi .vi-i .vi-man .vi-man-flex span{
+        margin-right: 5px;
+        background-color: #0066b8;
+        color: #fff;
+    }
+    main .vi .vi-i img,
+    main .vi .vi-ii img{
+        width: 100px;
+        height: 100px;
+        margin-top: 30px;
+        margin-bottom: 25px;
+    }
+    main .vi .vi-i .vi-i-cont{
+        width: 250px;
+        margin-top: 15px;
+    }
+    main .vi .vi-i .vi-i-cont .vi-i-cont-i,
+    main .vi .vi-i .vi-i-cont .vi-i-cont-ii,
+    main .vi .vi-i .vi-i-cont .vi-i-cont-iii,
+    main .vi .vi-i .vi-i-cont .vi-i-cont-iv{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    main .vi .vi-i .vi-i-cont .vi-i-cont-i .vi-i-cont-i-i,
+    main .vi .vi-i .vi-i-cont .vi-i-cont-ii .vi-i-cont-ii-i,
+    main .vi .vi-i .vi-i-cont .vi-i-cont-iii .vi-i-cont-iii-i,
+    main .vi .vi-i .vi-i-cont .vi-i-cont-iv .vi-i-cont-iv-i{
+        text-align: center;
+        font-weight: bold;
+        width: 140px;
     }
 }
