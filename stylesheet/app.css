@@ -250,8 +250,7 @@ body{
         border-radius: 100px;
         position: absolute;
         z-index: 5;
-        top: 300px;
-        /* background-color: transparent; */
+        top: 250px;
     }
     main .iv button:nth-of-type(2){
         right: 30px;
@@ -268,15 +267,13 @@ body{
         width: 100%;
         overflow: hidden;
         position: relative;
-        border: 1px solid gold;
     }
     main .iv .carousel .inline-flex{
         display: inline-flex;
     }
     main .iv .carousel .inline-flex .box-i,
     main .iv .carousel .inline-flex .box-ii{
-        width: 340px;
-        border: 1px solid;
+        width: 345px;
     }
     main .iv .carousel .inline-flex .box-i .box-cont{
         position: relative;
@@ -285,7 +282,7 @@ body{
     main .iv .carousel .inline-flex .box-i .box-cont img{
         width: 60px;
         height: 60px;
-        border: 1px solid;
+        box-shadow: 0px 1px 1px 0px #000;
         border-radius: 100px;
     }
     main .iv .carousel .inline-flex .box-i .box-cont i{
@@ -293,4 +290,40 @@ body{
         right: 15px;
         top: 15px;
     }
+    main .v{
+        position: relative;
+    }
+    main .v .v-i .img,
+    main .v .v-ii .img,
+    main .v .v-iv .img,
+    main .v .v-iii .img,
+    main .v .v-v .img{
+        display: flex;
+        justify-content: center;
+    }
+    main .v .v-i .img img,
+    main .v .v-ii .img img,
+    main .v .v-iii .img img,
+    main .v .v-iv .img img,
+    main .v .v-v .img img{
+        width: 250px;
+        padding: 30px;
+        padding-bottom: 0;
+    }
+    main .v .v-iv .img img:hover{
+        transform: scale(1.05);
+        cursor: pointer;
+        transition: transform linear .3s;
+    }
+    main .v .v-ii,
+    main .v .v-iv,
+    main .v .v-vi{
+        background-color:#f2f2f2;
+    }
+    main .v .v-vi .v-vi-flex,
+    main .v .v-vi .v-vi-flex .v-vi-i .v-vi-cont{
+        display: flex;
+        align-items:center;
+    }
+    main .v .v-vi .v-vi-flex .v-vi-i{}
 }
