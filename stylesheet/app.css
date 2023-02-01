@@ -320,10 +320,45 @@ body{
     main .v .v-vi{
         background-color:#f2f2f2;
     }
+    main .v .v-vi p{
+        text-align: center;
+        font-size: 20px;
+    }
     main .v .v-vi .v-vi-flex,
-    main .v .v-vi .v-vi-flex .v-vi-i .v-vi-cont{
+    main .v .v-vi .v-vi-flex .v-vi-i .v-vi-cont,
+    main .v .v-vi .v-vi-flex .v-vi-ii .v-vi-cont{
         display: flex;
+    }
+    main .v .v-vi .v-vi-flex .v-vi-i .v-vi-cont{
+        width: 250px;
+    }
+    main .v .v-vi .v-vi-flex .v-vi-i .v-vi-cont,
+    main .v .v-vi .v-vi-flex .v-vi-ii .v-vi-cont{
         align-items:center;
     }
-    main .v .v-vi .v-vi-flex .v-vi-i{}
+    main .v .v-vi .v-vi-flex .v-vi-i .v-vi-cont,
+    main .v .v-vi .v-vi-flex .v-vi-ii .v-vi-cont{
+        padding: 10px;
+    }
+    main .v .v-vi .v-vi-a{
+        display: flex;
+        justify-content: center;
+    }
+    main .v .v-vi .v-vi-a a{
+        color: #0066b8;
+        text-decoration: none;
+        padding-top: 15px;
+        padding-bottom: 70px;
+    }
+    main .v .v-vi .btn-group{
+        display: flex;
+        justify-content: center;
+    }
+    main .v .v-vi .btn-group button{
+        padding: 15px 30px;
+        background-color: #0066b8;
+        color: #fff;
+        border: 1px solid #fff;
+        font-size: 20px;
+    }
 }
