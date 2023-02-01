@@ -4,18 +4,19 @@ body{
     margin: 0;
     box-sizing: border-box;
 }
-.v,
-.vh{
-    transition: all linear .3s;
-    height: auto !important;
-    border-bottom: 8px solid #0066b8;
-}
-.vh{
-    visibility: visible !important;
-}
-@media screen and (max-width: 765px){
+@media screen and (max-width: 768px){
     .container{
         width:100%;
+    }   
+    .v,
+    .vh{
+        transition: all linear .3s;
+        height: auto !important;
+        border-bottom: 8px solid #0066b8;
+    }
+    .vh{
+        visibility: visible !important;
+        height: auto !important;
     }
     header{
         position: relative;
@@ -58,7 +59,6 @@ body{
         padding: 15px;
         color: #fff;
         text-decoration: none;
-
     }
     header .nav nav a:hover{
         background-color: #fff;
@@ -80,109 +80,217 @@ body{
         color: #fff;
     }
     main .i{
+        background-color: #25252b;
+        padding: 15px 50px;
         text-align: center;
-        padding: 5px 50px;
-        background-color: #2c2c32;
+        font-size: 17px;
     }
-    main .i a{
+    main .i .i-cont a{
         color: #0066b8;
         text-decoration: none;
     }
-    main .i{
+    main .i .i-cont{
         color: #fff;
-        font-size: 18px;
     }
-    main .ii p:first-child,
-    main .ii p:nth-of-type(2),
-    main .ii p:nth-of-type(3){
+    main .ii{
+        background-color: #2c2c32;
+        padding: 25px 0;
+    }
+    main .ii p,
+    main .ii .p-i,
+    main .ii .p-ii,
+    main .ii .p-iii{
+        margin: 0 !important;
         text-align: center;
     }
-    main .ii p:nth-of-type(1){
-        font-size: 45px !important;
-        margin-top: 20px !important;
-        font-weight: normal;
+    main .ii .p-i,
+    main .ii .p-ii{
+        font-size: 45px;
+        color: #fff;
     }
-    mian .ii p:nth-of-type(2){
-        font-weight: bold;
-        font-size: 30px !important;
+    main .ii .p-ii{
+        font-weight: 600;
     }
-    main .ii p:first-child,
-    main .ii p:nth-of-type(2),
-    main .ii p:last-child{
-        font-size: 30px;
-        margin: 0;
+    main .ii .p-iii{
+        margin: 10px 0 !important;
+        color: rgba(255,255,255,.6);
+        font-size: 17px;
+        margin-bottom: 20px !important;
     }
-    main .ii .btn-group{
+    main .ii .ii-i .btn-group{
         display: flex;
         justify-content: center;
     }
-    main .ii .btn-group button{
-        padding: 10px 15px;
-        background-color: #0066b8;
-        color: #fff;
-        display: flex;
-        border: none;
-        justify-content: center;
-        flex-direction: column;
-        cursor: pointer;
-    }
-    main .ii .btn-group button:hover{
-        background-color: #02569b;
-    }
-    main .ii .btn-group button span:last-child{
-        text-align: center;
-        font-weight: normal;
-        width: 100%;
-    }
-    main .ii .btn-group button:first-child{
-        padding: 10px 50px;
-        margin-right: 2px;
-    }
-    main .ii .btn-dropdown{
+    main .ii .ii-i .btn-group{
         position: relative;
     }
-    main .ii .btn-group button:nth-of-type(2){
-        font-size: 18px;
-        font-weight: bold;
+    main .ii .btn-group button{
+        border: none;
+        padding: 10px;
+        background-color: #0066b8;
+        color: #fff;
+        cursor: pointer;
     }
-    main .ii .btn-group button span:nth-of-type(1){
-        font-size: 18px;
-        font-weight: bold;
-        margin-bottom: 5px;
+    main .ii .btn-group button span{
+        font-weight: 900;
+        font-size: 15px;
     }
-    main .ii .btn-dropdown .btn-flex{
-        background-color: #fff;
-        left: 77px;
+    main .ii .btn-group button:first-child{
+        margin-right: 3px;
+        width: 260px;
+    }
+    main .ii .btn-group button:last-child{
+        width: 45px;
+        font-size: 25px;
+    }
+    main .ii .ii-i .btn-cont{
+        border: 3px solid #0066b8;
+        background-color: #f2f2f2;
         position: absolute;
-        overflow: hidden;
-        height: 0;
-        visibility: hidden;
-        border: 2px solid #0066b8;
-    }
-    main .ii .btn-dropdown .btn-flex table tbody{
+        padding: 0 !important;
+        left: 88px;
         text-align: left;
+        overflow: hidden;
+        visibility: hidden;
+        height: 0;
     }
-    main .ii .btn-dropdown .btn-flex table tbody tr td{
-        padding: 5px;
-    }
-    main .ii .btn-dropdown .btn-flex table tbody tr td:last-child{
-        background-color: #dfdfdf;
-    }
-    main .ii .btn-dropdown .btn-flex table tbody tr:nth-of-type(2) td:nth-of-type(2) p,
-    main .ii .btn-dropdown .btn-flex table tbody tr:nth-of-type(3) td:nth-of-type(2) p,
-    main .ii .btn-dropdown .btn-flex table tbody tr:nth-of-type(4) td:nth-of-type(2) p{
-        font-size: 25px !important;
-    }
-    main .ii .btn-dropdown .btn-flex .table-footer{
-        display: flex;
-        flex-direction: column;
+    main .ii .ii-ii{
+        background-color: #25252b;
+        margin: 0 auto;
+        margin-top: 15px !important;
         text-align: center;
-        padding: 15px;
-        justify-content: center;
+        padding: 10px;
+        border-radius: 10px;
+        color: rgba(255,255,255,.6);
+        font-size: 13px;
     }
-    main .ii .btn-dropdown .btn-flex .table-footer a{
-        display: block !important;
+    main .ii .ii-ii,
+    main .ii .ii-iii{
+        width: 300px;
+    }
+    main .ii .ii-iii{
+        width: 200px;
+    }
+    main .ii .ii-ii a{
         color: #0066b8;
         text-decoration: none;
+    }
+    main .ii .ii-iii{
+        margin: 20px auto;
+        color: rgba(255,255,255,.6);
+        font-size: 13px;
+    }
+    main .ii .ii-iii a{
+        color: #0066b8;
+        text-decoration: none;
+    }
+    main .ii .ii-i .btn-cont table{
+        border-collapse: collapse;
+    }
+    main .ii .ii-i .btn-cont table tr td{
+        padding: 10px;
+        font-size: 14px;
+    }
+    main .ii .ii-i .btn-cont table tr:nth-of-type(2) td:nth-of-type(3),
+    main .ii .ii-i .btn-cont table tr:nth-of-type(3) td:nth-of-type(3),
+    main .ii .ii-i .btn-cont table tr:nth-of-type(4) td:nth-of-type(3),
+    main .ii .ii-i .btn-cont table tr:nth-of-type(2) td:nth-of-type(4),
+    main .ii .ii-i .btn-cont table tr:nth-of-type(3) td:nth-of-type(4),
+    main .ii .ii-i .btn-cont table tr:nth-of-type(4) td:nth-of-type(4){
+        color: #0066b8;
+    }
+    main .ii .ii-i .btn-cont table tr td:last-child{
+        background-color: #c5c5c5;
+    }
+    main .ii .ii-i .btn-cont table tr td:first-child{
+        font-weight: 900;
+    }   
+    main .ii .ii-i .btn-cont .btn-i{
+        padding: 10px;
+        border-top: 1px solid;
+        display: flex;
+        justify-content: center;
+    }
+    main .ii .ii-i .btn-cont .btn-i .btn-i-i a{
+        color: #0066b8;
+        text-decoration: none;
+        text-align: center;
+    }
+    main .ii .ii-iv img{
+        width: 100%;
+    }
+    main .iii{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    main .iii div{
+        width: 225px;
+        margin: 0 auto;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        flex-direction: column;
+    }
+    main .iii div i{
+        width: 45px;
+        height: 45px;
+        border: 1px solid;
+        margin-bottom: 15px;
+    }
+    main .iii div:hover{
+        background-color: #c5c5c5;
+    }
+    main .iv button{
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: 900;
+        border-radius: 100px;
+        position: absolute;
+        z-index: 5;
+        top: 300px;
+        /* background-color: transparent; */
+    }
+    main .iv button:nth-of-type(2){
+        right: 30px;
+    }
+    main .iv button:nth-of-type(1){
+        left: 30px;
+    }
+    main .iv{
+        position: relative;
+        padding: 50px 70px !important;
+        background-color: #f2f2f2;
+    }
+    main .iv .carousel{
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        border: 1px solid gold;
+    }
+    main .iv .carousel .inline-flex{
+        display: inline-flex;
+    }
+    main .iv .carousel .inline-flex .box-i,
+    main .iv .carousel .inline-flex .box-ii{
+        width: 340px;
+        border: 1px solid;
+    }
+    main .iv .carousel .inline-flex .box-i .box-cont{
+        position: relative;
+        display: flex;
+    }
+    main .iv .carousel .inline-flex .box-i .box-cont img{
+        width: 60px;
+        height: 60px;
+        border: 1px solid;
+        border-radius: 100px;
+    }
+    main .iv .carousel .inline-flex .box-i .box-cont i{
+        position: absolute;
+        right: 15px;
+        top: 15px;
     }
 }
